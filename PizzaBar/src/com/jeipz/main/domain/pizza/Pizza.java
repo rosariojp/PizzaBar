@@ -1,10 +1,8 @@
-package com.jeipz.main.pizza;
+package com.jeipz.main.domain.pizza;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-import com.jeipz.main.pizza.crust.Crust;
-import com.jeipz.main.pizza.topping.Topping;
 import com.jeipz.main.utils.Utility;
 
 public class Pizza {

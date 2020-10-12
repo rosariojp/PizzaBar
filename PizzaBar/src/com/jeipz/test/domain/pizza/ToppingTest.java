@@ -1,10 +1,10 @@
-package com.jeipz.test.pizza.topping;
+package com.jeipz.test.domain.pizza;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.jeipz.main.pizza.topping.Topping;
+import com.jeipz.main.domain.pizza.Topping;
 
 public class ToppingTest {
 

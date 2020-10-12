@@ -1,4 +1,4 @@
-package com.jeipz.main.pizza.crust;
+package com.jeipz.main.domain.pizza;
 
 public enum Crust {
 	

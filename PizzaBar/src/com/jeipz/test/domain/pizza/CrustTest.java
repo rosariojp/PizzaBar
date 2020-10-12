@@ -1,10 +1,10 @@
-package com.jeipz.test.pizza.crust;
+package com.jeipz.test.domain.pizza;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.jeipz.main.pizza.crust.Crust;
+import com.jeipz.main.domain.pizza.Crust;
 
 public class CrustTest {
 

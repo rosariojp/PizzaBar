@@ -1,4 +1,4 @@
-package com.jeipz.main.pizza.topping;
+package com.jeipz.main.domain.pizza;
 
 public enum Topping {
 	
