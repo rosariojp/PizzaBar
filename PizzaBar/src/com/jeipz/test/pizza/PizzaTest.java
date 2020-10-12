@@ -11,9 +11,15 @@ import com.jeipz.main.pizza.topping.Topping;
 public class PizzaTest {
 
 	@Test
-	public void bakePizzaWithoutTopping() {
-		Pizza pizza = new Pizza.Baker().setCrust(Crust.REGULAR).bake();
+	public void bakePizzaRightAway() {
+		Pizza pizza = new Pizza.Baker().bake();
 		assertEquals(pizza.toString(), "Regular Crust Pizza");
+	}
+	
+	@Test
+	public void bakePizzaWithoutTopping() {
+		Pizza pizza = new Pizza.Baker().setCrust(Crust.THIN).bake();
+		assertEquals(pizza.toString(), "Thin Crust Pizza");
 	}
 
 	@Test
