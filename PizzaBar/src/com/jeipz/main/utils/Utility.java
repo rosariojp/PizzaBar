@@ -1,6 +1,6 @@
 package com.jeipz.main.utils;
 
-import java.util.List;
+import java.util.Set;
 
 public class Utility {
 
@@ -28,7 +28,7 @@ public class Utility {
 	 * @param list to remove brackets {@code '[]'}
 	 * @return {@code String} of given list without brackets {@code '[]'}
 	 */
-	public static <T> String removeListStringBrackets(List<T> list) {
+	public static <T> String removeSetStringBrackets(Set<T> list) {
 		String listStr = list.toString();
 		return listStr.substring(1, listStr.length() - 1);
 	}

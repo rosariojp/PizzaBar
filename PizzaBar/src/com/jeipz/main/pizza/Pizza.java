@@ -1,7 +1,7 @@
 package com.jeipz.main.pizza;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 import com.jeipz.main.pizza.crust.Crust;
 import com.jeipz.main.pizza.topping.Topping;
@@ -10,7 +10,7 @@ import com.jeipz.main.utils.Utility;
 public class Pizza {
 
 	private Crust crust;
-	private List<Topping> toppings;
+	private Set<Topping> toppings;
 	
 	private Pizza(Baker baker) {
 		this.crust = baker.crust;
@@ -19,11 +19,11 @@ public class Pizza {
 
 	public static class Baker {
 		private Crust crust;
-		private List<Topping> toppings;
+		private Set<Topping> toppings;
 		
 		public Baker() {
 			crust = Crust.REGULAR;
-			toppings = new ArrayList<Topping>();
+			toppings = new LinkedHashSet<Topping>();
 		}
 		
 		public Baker setCrust(Crust crust) {
@@ -48,7 +48,7 @@ public class Pizza {
 			preparedPizza += " with ";
 		}
 
-		preparedPizza += Utility.removeListStringBrackets(toppings);
+		preparedPizza += Utility.removeSetStringBrackets(toppings);
 		preparedPizza = Utility.changeLastCommaToAnd(preparedPizza);
 		return preparedPizza;
 	}

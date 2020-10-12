@@ -45,4 +45,10 @@ public class PizzaTest {
 		assertEquals(pizza.toString(), "Stuffed Crust Pizza");
 	}
 	
+	@Test
+	public void duplicatePizzaTopping( ) {
+		Pizza pizza = new Pizza.Baker().setCrust(Crust.THIN).addTopping(Topping.HAM).addTopping(Topping.HAM).addTopping(Topping.TOMATOES).bake();
+		assertEquals(pizza.toString(), "Thin Crust Pizza with Ham and Tomatoes");
+	}
+	
 }
