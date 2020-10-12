@@ -4,6 +4,7 @@ import org.junit.internal.TextListener;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 
+import com.jeipz.test.pizza.PizzaTest;
 import com.jeipz.test.pizza.crust.CrustTest;
 import com.jeipz.test.pizza.topping.ToppingTest;
 
@@ -25,7 +26,8 @@ public class ApplicationTest {
 		
 		Result result = junit.run(
 					CrustTest.class,
-					ToppingTest.class
+					ToppingTest.class,
+					PizzaTest.class
 				);
 		
 		resultReport(result);
