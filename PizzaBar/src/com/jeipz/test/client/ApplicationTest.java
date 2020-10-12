@@ -7,6 +7,7 @@ import org.junit.runner.Result;
 import com.jeipz.test.domain.pizza.CrustTest;
 import com.jeipz.test.domain.pizza.PizzaTest;
 import com.jeipz.test.domain.pizza.ToppingTest;
+import com.jeipz.test.utils.UtilityTest;
 
 public class ApplicationTest {
 
@@ -27,7 +28,8 @@ public class ApplicationTest {
 		Result result = junit.run(
 					CrustTest.class,
 					ToppingTest.class,
-					PizzaTest.class
+					PizzaTest.class,
+					UtilityTest.class
 				);
 		
 		resultReport(result);
