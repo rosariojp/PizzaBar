@@ -26,16 +26,32 @@ public class Pizza {
 			toppings = new LinkedHashSet<Topping>();
 		}
 		
+		/**
+		 * Set the crust of the Pizza
+		 * 
+		 * @param crust such as {@code Crust.THIN, Crust.STUFFED}
+		 * @return {@code instanceof Baker}
+		 */
 		public Baker setCrust(Crust crust) {
 			this.crust = crust;
 			return this;
 		}
 		
+		/**
+		 * Add topping of the Pizza
+		 *  
+		 * @param topping such as {@code Topping.HAM, Topping.ONIONS}
+		 * @return {@code instanceof Baker}
+		 */
 		public Baker addTopping(Topping topping) {
 			toppings.add(topping);
 			return this;
 		}
 		
+		/**
+		 * Bake the Pizza
+		 * @return {@code instanceof Pizza} with {@code Baker} properties
+		 */
 		public Pizza bake() {
 			return new Pizza(this);
 		}
@@ -47,7 +63,6 @@ public class Pizza {
 		if (toppings.size() > 0) {
 			preparedPizza += " with ";
 		}
-
 		preparedPizza += Utility.removeSetStringBrackets(toppings);
 		preparedPizza = Utility.changeLastCommaToAnd(preparedPizza);
 		return preparedPizza;
