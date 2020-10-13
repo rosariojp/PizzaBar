@@ -8,6 +8,7 @@ import com.jeipz.test.domain.customer.CustomerTest;
 import com.jeipz.test.domain.pizza.CrustTest;
 import com.jeipz.test.domain.pizza.PizzaTest;
 import com.jeipz.test.domain.pizza.ToppingTest;
+import com.jeipz.test.domain.worker.WorkerTest;
 import com.jeipz.test.utils.UtilityTest;
 
 public class ApplicationTest {
@@ -31,7 +32,8 @@ public class ApplicationTest {
 					ToppingTest.class,
 					PizzaTest.class,
 					UtilityTest.class,
-					CustomerTest.class
+					CustomerTest.class,
+					WorkerTest.class
 				);
 		
 		resultReport(result);
