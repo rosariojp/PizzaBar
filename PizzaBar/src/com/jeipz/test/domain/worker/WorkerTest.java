@@ -16,7 +16,7 @@ import com.jeipz.main.domain.worker.Worker;
 public class WorkerTest {
 
 	@Rule
-	public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
+	public final SystemOutRule systemOutRule = new SystemOutRule().enableLog().mute();
 	
 	@Test
 	public void valiteWork() {

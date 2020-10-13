@@ -27,6 +27,8 @@ public class ApplicationTest {
 		JUnitCore junit = new JUnitCore();
 		junit.addListener(new TextListener(System.out));
 		
+		System.out.println("TEST Running");
+		
 		Result result = junit.run(
 					CrustTest.class,
 					ToppingTest.class,
