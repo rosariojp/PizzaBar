@@ -55,6 +55,14 @@ public class Pizza {
 		}
 	}
 	
+	public Crust getCrust() {
+		return crust;
+	}
+
+	public Set<Topping> getToppings() {
+		return toppings;
+	}
+
 	@Override
 	public String toString() {
 		String preparedPizza = crust + " Pizza";
