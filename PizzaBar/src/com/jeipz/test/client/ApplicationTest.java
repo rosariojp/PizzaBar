@@ -5,6 +5,7 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 
 import com.jeipz.test.domain.customer.CustomerTest;
+import com.jeipz.test.domain.order.OrderTest;
 import com.jeipz.test.domain.pizza.CrustTest;
 import com.jeipz.test.domain.pizza.PizzaTest;
 import com.jeipz.test.domain.pizza.ToppingTest;
@@ -35,6 +36,7 @@ public class ApplicationTest {
 					PizzaTest.class,
 					UtilityTest.class,
 					CustomerTest.class,
+					OrderTest.class,
 					WorkerTest.class
 				);
 		

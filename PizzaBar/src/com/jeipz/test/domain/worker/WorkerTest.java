@@ -20,6 +20,8 @@ public class WorkerTest {
 	
 	@Test
 	public void valiteWork() {
+		Order.setCount(0);
+		
 		Customer customer = new Customer("Juan Dela Cruz");
 		Pizza pizza = new Pizza.Baker().setCrust(Crust.THIN).addTopping(Topping.MOZZARELLA).addTopping(Topping.PINEAPPLE).bake();
 		Order order = new Order(customer, pizza);
