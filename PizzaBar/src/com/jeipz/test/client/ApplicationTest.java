@@ -4,6 +4,7 @@ import org.junit.internal.TextListener;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 
+import com.jeipz.test.domain.customer.CustomerTest;
 import com.jeipz.test.domain.pizza.CrustTest;
 import com.jeipz.test.domain.pizza.PizzaTest;
 import com.jeipz.test.domain.pizza.ToppingTest;
@@ -29,7 +30,8 @@ public class ApplicationTest {
 					CrustTest.class,
 					ToppingTest.class,
 					PizzaTest.class,
-					UtilityTest.class
+					UtilityTest.class,
+					CustomerTest.class
 				);
 		
 		resultReport(result);
