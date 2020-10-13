@@ -16,7 +16,7 @@ import com.jeipz.main.domain.pizza.Topping;
 public class OrderProcessorTest {
 
 	@Rule
-	public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
+	public final SystemOutRule systemOutRule = new SystemOutRule().enableLog().mute();
 	
 	@Test
 	public void testRun() {
